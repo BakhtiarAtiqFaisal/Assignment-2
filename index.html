@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Assignment 02</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdfcbce1d8.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-top">
+            <nav>
+                <h1><i>Fitness</i></h1>
+                <ul>
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">Service</a></li>
+                    <li class="hideOnMobile"><a href="#">Contact</a></li>
+                    <li class="hideOnMobile"><a href="#">About</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="banner-body">
+                <h1>Get body in <br><span id="shape"><i>shape</i></span> & stay <br>healthy</h1>
+                <p>Fitness is the state of physical health and strength, <br>achieved through exercise, nutrition, and a balanced lifestyle.</p>
+                <div class="banner-body-btn">
+                    <div class="banner-body-btn1">
+                        <button>Join Club Now!</button>
+                    </div>
+                    <div class="banner-body-btn2">
+                        <button>Download App</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-bottom-picture">
+                <div class="glass-container">
+                    <div class="glass1">
+                        <h1>500+</h1>
+                        <p>Free Workout Videos</p>
+                    </div>
+                    <div class="glass2">
+                        <div class="glass2-circle">
+                            <i class="fa circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="glass2-content">
+                            <h1>350+</h1>
+                            <p>Video tutorial</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="habit">
+            <div class="habit-header">
+                <h1>Change Your habits</h1>
+                <p>Change your habit to improve health, productivity, and overall well-being.</p>
+            </div>
+            <div class="habit-images">
+                <div class="habit-images1 content">
+                    <img class="habit-img" src="/images/image 3.png" alt="exercise lying down">
+                    <h5>Movement</h5>
+                    <p>Enhances cardiovascular health <br>and boosts energy levels.</p>
+                </div>
+                <div class="habit-images2 content">
+                    <img class="habit-img" src="images/image 2.png" alt="exercise hands up">
+                    <h5>Time</h5>
+                    <p>Improves strength, flexibility, <br> and muscle tone.</p>
+                </div>
+                <div class="habit-images3 content">
+                    <img class="habit-img" src="images/image 4.png" alt="exercise dumbell 1">
+                    <h5>Practice</h5>
+                    <p>Supports mental health by <br> reducing stress and anxiety. </p>
+                </div>
+                <div class="habit-images4 content">
+                    <img class="habit-img" src="images/image 5.png" alt="exercise dumbell 2">
+                    <h5>Weight Loss</h5>
+                    <p>Promotes weight management <br> and overall physical well-being.</p>
+                </div>
+            </div>
+            <div class="extra-mile">
+                <div class="extra-mile-content">
+                    <h1>Run an Extra <br> Mile Easily</h1>
+                    <p>Gradually increase your distance, focus on pacing, stay hydrated, and incorporate strength training to run an extra mile easily.</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="extra-mile-picture">
+                    <img src="images/run.jpg" alt="running">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        
+        <div class="BMI-calculator">
+            <div class="BMI-calculator-table">
+                <h1>BMI Calculator Chart</h1>
+                <table>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Weight Status</th>
+                    </tr>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy</td>
+                    </tr>
+                    <tr>
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>30.0 - and Above</td>
+                        <td>Obese</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="calculate-BMI">
+                <h1>Calculate your BMI</h1>
+                <p>Calculate BMI using weight and height for health assessment.</p>
+                <div class="BMI-input-fields">
+                    <div class="input-field1">
+                        <input type="text" placeholder="Height/cm">
+                        <input type="text" placeholder="Weight/kg">
+                    </div>
+                    <div class="input-field2">
+                        <div class="age">
+                            <input type="text" placeholder="Age">
+                        </div>    
+                        <div class="sex">
+                            <select name="sex" id="sex">
+                                <option>sex</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-field3">
+                        <select name="activity" id="activity">
+                            <option>Select an activity factor</option>
+                            <option>activity factor 1</option>
+                            <option>activity factor 2</option>
+                        </select>
+                    </div>
+                    <button>Calculate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        
+    </section>
 </body>
+
 </html>
